@@ -6,6 +6,7 @@ export default class SearchBar extends React.Component<any,any> {
         this.state = {input: ""};
         this.onChangeLocation = this.onChangeLocation.bind(this);
         this.handleTextInputChange = this.handleTextInputChange.bind(this);
+        this.setLoader = this.setLoader.bind(this);
     }
 
     public onChangeLocation(){
@@ -13,10 +14,19 @@ export default class SearchBar extends React.Component<any,any> {
         this.props.onChangeLocation(this.state.input);
     }
 
+    public setLoader(currentState:any){
+        this.props.setLoader(currentState);
+    }
+
     public handleTextInputChange(e:any){
         const inputValue = e.target.value;
         // console.log("TextInput Changed: " + inputValue);
         this.setState({input: inputValue});
+        if(inputValue !== ''){
+            this.setLoader(true);
+        } else {
+            this.setLoader(false);
+        }
     }
 
     public render() {
