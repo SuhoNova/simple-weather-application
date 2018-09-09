@@ -26,3 +26,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.search{
+  padding: 2em;
+}
+.search-input{
+  padding: 2em;
+}

@@ -1,5 +1,5 @@
-import {AppBar, IconButton, Toolbar, Typography} from '@material-ui/core/';
-import MenuIcon from '@material-ui/icons/Menu';
+import {AppBar, Toolbar, Typography} from '@material-ui/core/';
+// import MenuIcon from '@material-ui/icons/Menu';
 import * as React from 'react';
 // import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 
 export const Header: React.StatelessComponent<{}> = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="static" color="default">
                 <Toolbar>
-                    <IconButton  aria-label="Menu" color="inherit">
+                    {/* <IconButton  aria-label="Menu" color="inherit">
                         <MenuIcon aria-haspopup="true"/>
-                    </IconButton>
+                    </IconButton> */}
                     <Typography variant="display2" color="inherit">
                         <Link to="/">What is the Weather?</Link>
                     </Typography>

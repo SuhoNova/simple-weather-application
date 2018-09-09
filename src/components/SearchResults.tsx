@@ -11,9 +11,9 @@ export default class SearchResults extends React.Component<any, any> {
             <div className="centreText">
                 {(searchResults!==undefined && searchResults!==null && searchResults.length!==0 ?
                 <div>
-                    <h2>Location: {searchResults.name}, {searchResults.sys.country}</h2>
-                    <h3>Weather: {searchResults.weather[0].main}</h3>
-                    <p>Weather Description: {searchResults.weather[0].description}</p>
+                    <h2>Weather: {searchResults.weather[0].main}</h2>
+                    <h3>Weather Description: {searchResults.weather[0].description}</h3>
+                    <p>Location: {searchResults.name}, {searchResults.sys.country}</p>
                 </div>
                 : 
                 <div>

@@ -37,6 +37,8 @@ export default class SearchBar extends React.Component<any,any> {
                     <input name="inputLocation" placeholder="Search Location" onChange={this.handleTextInputChange}/>
                 </label>
                 <button onClick={this.onChangeLocation}>Search</button>
+                <br/>
+                <i>Uses OpenWeatherMap API</i>
             </div>
         );
     }

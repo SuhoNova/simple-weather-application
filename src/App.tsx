@@ -19,10 +19,13 @@ export default class App extends React.Component<any,any> {
 
   public render() {
     return (
-      <div className="container-fluid">
-        <SearchBar onChangeLocation={this.onChangeLocation} setLoader={this.setLoader} />
-        <SearchResults searchResults={this.state.searchResults} loader={this.state.loader} />
-        
+      <div className="container-fluid search">
+        <div className="search-input">
+          <SearchBar onChangeLocation={this.onChangeLocation} setLoader={this.setLoader} />
+        </div>
+        <div className="search-result">
+          <SearchResults searchResults={this.state.searchResults} loader={this.state.loader} />
+        </div>
       </div>
     );
   }
