@@ -1,4 +1,4 @@
-# simple-react-application
+# simple-weather-application
 Simple react typescript application that uses a REST API 
 
 It uses the 'OpenWeatherMap' API to get weather information.
